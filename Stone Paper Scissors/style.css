@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#background {
+    height: 894px;
+    width: 1694px;
+    position: relative;
+}
+
+
+#container {
+    width: 68%;
+    height: 68%;
+    background-color: rgb(205, 196, 213, 0.5);
+    position: absolute;
+    top: 110px;
+    left: 250px;
+
+    text-align: center;
+    padding: 20px;
+    border-radius: 40px;
+
+}
+
+#Scissors {
+    height: 65%;
+    width: 55%;
+    position: absolute;
+    top: -5px;
+    left: 650px;
+    transform: rotate(15deg);
+
+}
+
+#stone {
+    height: 62%;
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    z-index: 4;
+
+}
+
+#GameName {
+
+    position: absolute;
+    top: 23%;
+    left: 100px;
+    z-index: 2;
+    font-size: 70px;
+    color: aliceblue;
+
+}
+
+#papertext {
+    position: absolute;
+    top: 125px;
+    font-size: 130px;
+}
+
+#scissorstext {
+    position: absolute;
+    top: 250px;
+    font-size: 87px;
+
+}
+
+#buttonContainer {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    position: absolute;
+    top: 430px;
+    left: 825px;
+    z-index: 4;
+
+}
+
+.game-button {
+    background: linear-gradient(145deg, #ff2bc2, #a100f0);
+    border: 2px solid #42ff3d;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.game-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+.game-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#background2{
+    height: 894px;
+    width: 1694px;
+    position: relative;
+}
+#stone2{
+    position: absolute;
+    height: 70%;
+    top: 60px;
+    left: -180px;
+    /* animation: shake 0.5s; /* Duration of the shake */
+    /* animation-iteration-count: 1; Repeat indefinitely */
+     
+}
+#stone3{
+    position: absolute;
+    height: 70%;
+    top: 60px;
+    right: -205px;
+}
+/* @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+} */
+#buttoncontainer{
+    display: flex;
+    position: absolute;
+    top: 85%;
+    left: 38.6%;
+    gap: 40px;
+    
+}
+.iconbutton{
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    border-radius: 15px; /* Rounded corners */
+    border: 5px solid white; /* White border */
+    background-color: black; /* Black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for transform and shadow */
+    cursor: pointer;
+    overflow: hidden; /* Ensures image doesn't overflow the button */
+}
+#stone4{
+    max-width: 100%;
+    max-height: 100%;
+}
+#scissors1{
+    height: 80px;
+    width: 100px;
+}
+#paper{
+    height: 100px;
+    width: 150px;
+}
+.iconbutton:hover {
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Stronger shadow on hover */
+}
+.star {
+    position: relative;
+    display: block;
+    color: white;
+    width: 0px;
+    height: 0px;
+    border-right: 40px solid transparent; /* Adjust this value */
+    border-bottom: 28px solid white; /* Adjust this value */
+    border-left: 40px solid transparent; /* Adjust this value */
+    transform: rotate(35deg);
+}
+
+.star:hover {
+    color: yellow; /* Change color on hover */
+}
+
+.star:before {
+    border-bottom: 39.2px solid white; /* Adjust this value */
+    border-left: 14.7px solid transparent; /* Adjust this value */
+    border-right: 14.7px solid transparent; /* Adjust this value */
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -21.7px; /* Adjust this value */
+    left: -29.6px; /* Adjust this value */
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+}
+
+.star:after {
+    position: absolute;
+    display: block;
+    color: white;
+    top: 0.8px; /* Adjust this value */
+    left: -42px; /* Adjust this value */
+    width: 0px;
+    height: 0px;
+    border-right: 40px solid transparent; /* Adjust this value */
+    border-bottom: 28px solid white; /* Adjust this value */
+    border-left: 40px solid transparent; /* Adjust this value */
+    transform: rotate(-70deg);
+    content: '';
+}
+
+
+#starbox{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 50px;
+    max-width: 50%;
+    
+}
+#stone2 {
+    transition: height 0.5s ease; /* Smooth transition only for height change */
+}
+
+.shake {
+    animation: shake 1s; /* Shake animation duration */
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Landing Page</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="path/to/your/logo.png" alt="Goyto Logo">
+                <span>Goyto</span>
+            </div>
+
+            <div class="sign-in">
+                <button id="signin">
+                    Sign-in &#8594;
+                </button>
+            </div>
+        </div>
+
+    </header>
+</div>
+<main>
+    <div class="hero">
+        <h1>Discover Your Next Great <br><span>ADVENTURE</span></h1>
+    </div>
+    <!-- flights wagera ka booking area hai ye -->
+    <!-- <div class="select-option-bg">
+
+
+        <div class="select-option">
+            <div class="options">
+                <div class="choose-one">
+                    Flights
+                </div>
+                <div class="choose-one">
+                    Hotels
+                </div>
+                <div class="choose-one">
+                    Buses
+                </div>
+                <div class="choose-one">
+                    Trains
+                </div>
+            </div>
+
+            <div class="book-flight">
+
+                <div class="from">
+                    <p class="from-txt">From</p>
+                    <select class="input-from">
+                        <option value="Blr"> &nbsp--Select--</option>
+                    </select>
+                </div>
+
+                <div class="to">
+                    <p class="to-txt">To</p>
+                    <select class="input-to">
+                        <option value="Del">&nbsp --Select--</option>
+                    </select>
+                </div>
+
+                <div class="arr">
+                    &#8644;
+                </div>
+
+                <div class="date">
+                    <p class="date-txt">Date</p>
+                    <input class="input-date" type="date">
+                </div>
+
+                <button class="search">
+                    Search
+                </button>
+
+            </div>
+        </div>
+
+
+    </div>     -->
+    <div class="select-option-bg">
+        <div class="container1">
+            <div class="tabs">
+                <div class="tab active" data-tab="flights">
+                    <img src="flight-icon.png" alt="Flights">
+                    Flights
+                </div>
+                <div class="tab" data-tab="hotels">
+                    <img src="hotel-icon.png" alt="Hotels">
+                    Hotels
+                </div>
+                <div class="tab" data-tab="homestays">
+                    <img src="homestay-icon.png" alt="Homestays & Villas">
+                    Homestays & Villas
+                </div>
+
+                <div class="tab" data-tab="trains">
+                    <img src="train-icon.png" alt="Trains">
+                    Trains
+                </div>
+                <div class="tab" data-tab="buses">
+                    <img src="bus-icon.png" alt="Buses">
+                    Buses
+                </div>
+                <div class="tab" data-tab="cabs">
+                    <img src="cab-icon.png" alt="Cabs">
+                    Cabs
+                </div>
+
+            </div>
+            <div class="tab-content active" id="flights">
+                <div class="booking-form">
+                    <div class="trip-type">
+                        <input type="radio" id="oneway" name="trip" checked>
+                        <label for="oneway">One Way</label>
+                        <input type="radio" id="roundtrip" name="trip">
+                        <label for="roundtrip">Round Trip</label>
+                        <input type="radio" id="multicity" name="trip">
+                        <label for="multicity">Multi City</label>
+                    </div>
+                    <div class="locations">
+                        <div class="from">
+                            <label for="from">From</label>
+                            <select id="from">
+                                <option value="Delhi">Delhi</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Kolkata">Kolkata</option>
+                            </select>
+                            <span class="code">DEL, Delhi Airport India</span>
+                        </div>
+                        <div class="to">
+                            <label for="to">To</label>
+                            <select id="to">
+                                <option value="Bengaluru">Bengaluru</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="Pune">Pune</option>
+                                <option value="Ahmedabad">Ahmedabad</option>
+                            </select>
+                            <span class="code">BLR, Bengaluru International Airport</span>
+                        </div>
+                    </div>
+                    <div class="dates">
+                        <div class="departure">
+                            <label for="departure">Departure</label>
+                            <input type="date" id="departure" value="2024-07-27">
+                        </div>
+                        <div class="return">
+                            <label for="return">Return</label>
+                            <input type="date" id="return" placeholder="Tap to add a return date for bigger discounts">
+                        </div>
+                    </div>
+                    <div class="travellers">
+                        <label for="travellers">Travellers & Class</label>
+                        <input type="text" id="travellers" value="1 Traveller, Economy/Premium Economy">
+                    </div>
+                    <div class="fare-types">
+                        <label>Select a special fare</label>
+                        <div class="fare-options">
+                            <button class="fare active">Regular</button>
+                            <button class="fare">Student</button>
+                            <button class="fare">Senior Citizen</button>
+                            <button class="fare">Armed Forces</button>
+                            <button class="fare">Doctor and Nurses</button>
+                        </div>
+                    </div>
+                    <button class="search-btn">SEARCH</button>
+                </div>
+            </div>
+            <div class="tab-content" id="hotels">
+                <!-- Hotels content here -->
+            </div>
+            <div class="tab-content" id="homestays">
+                <!-- Homestays content here -->
+            </div>
+
+            <div class="tab-content" id="trains">
+                <!-- Trains content here -->
+            </div>
+            <div class="tab-content" id="buses">
+                <!-- Buses content here -->
+            </div>
+            <div class="tab-content" id="cabs">
+                <!-- Cabs content here -->
+            </div>
+
+        </div>
+        <div class="tab-content" id="hotels">
+            <div class="section">
+                <label for="city">City:</label>
+                <select id="city">
+                    <option value="nyc">New York</option>
+                    <option value="la">Los Angeles</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <div class="city">
+                    <span class="code">New York</span>
+                </div>
+            </div>
+            <div class="section">
+                <label for="checkin">Check-in:</label>
+                <input type="date" id="checkin">
+            </div>
+            <div class="section">
+                <label for="checkout">Check-out:</label>
+                <input type="date" id="checkout">
+            </div>
+        </div>
+    
+    </div>
+</main>
+<p class="places-txt">Explore the Beautiful Places</p>
+
+
+<div class="container-wrap">
+    <button class="arrow" id="left-arrow">&#8592;</button>
+    <div class="card-container">
+
+
+        <div class="card">
+            <div class="image-container">
+                <img src="https://static.toiimg.com/thumb/msid-53891769,width-748,height-499,resizemode=4,imgsize-184383/.jpg"
+                    alt="Rome, Italy">
+                <div class="price">$83000 Per Night</div>
+            </div>
+            <div class="card-content">
+                <div class="location">
+                    <span class="location-icon">📍</span> Italy
+                </div>
+                <h2>Rome, Italy</h2>
+                <p>96 Days</p>
+            </div>
+        </div>
+        <!-- Repeat the card structure for additional cards -->
+        <div class="card">
+            <div class="image-container">
+                <img src="https://static.toiimg.com/thumb/msid-53891769,width-748,height-499,resizemode=4,imgsize-184383/.jpg"
+                    alt="Paris, France">
+                <div class="price">$79000 Per Night</div>
+            </div>
+            <div class="card-content">
+                <div class="location">
+                    <span class="location-icon">📍</span> France
+                </div>
+                <h2>Paris, France</h2>
+                <p>192 Days</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="https://static.toiimg.com/thumb/msid-53891769,width-748,height-499,resizemode=4,imgsize-184383/.jpg"
+                    alt="New York, USA">
+                <div class="price">$90000 Per Night</div>
+            </div>
+            <div class="card-content">
+                <div class="location">
+                    <span class="location-icon">📍</span> New York
+                </div>
+                <h2>New York, USA</h2>
+                <p>168 Days</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="https://static.toiimg.com/thumb/msid-53891769,width-748,height-499,resizemode=4,imgsize-184383/.jpg"
+                    alt="Dubai, Emirates">
+                <div class="price">$50000 Per Night</div>
+            </div>
+            <div class="card-content">
+                <div class="location">
+                    <span class="location-icon">📍</span> Emirates
+                </div>
+                <h2>Dubai, Emirates</h2>
+                <p>13 Days</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="https://static.toiimg.com/thumb/msid-53891769,width-748,height-499,resizemode=4,imgsize-184383/.jpg"
+                    alt="Dubai, Emirates">
+                <div class="price">$50000 Per Night</div>
+            </div>
+            <div class="card-content">
+                <div class="location">
+                    <span class="location-icon">📍</span> Emirates
+                </div>
+                <h2>Dubai, Emirates</h2>
+                <p>13 Days</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="https://static.toiimg.com/thumb/msid-53891769,width-748,height-499,resizemode=4,imgsize-184383/.jpg"
+                    alt="Dubai, Emirates">
+                <div class="price">$50000 Per Night</div>
+            </div>
+            <div class="card-content">
+                <div class="location">
+                    <span class="location-icon">📍</span> Emirates
+                </div>
+                <h2>Dubai, Emirates</h2>
+                <p>13 Days</p>
+            </div>
+        </div>
+
+    </div>
+    <button class="arrow" id="right-arrow">&#8594;</button>
+</div>
+<div class="container-wrap-1">
+    <div class="pricing">
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <div class="price-section">
+                    <span>month</span>
+                    <span class="price">$49</span>
+                </div>
+                <div class="images">
+                    <img src="https://media.istockphoto.com/id/1500563478/photo/traveler-asian-woman-relax-and-travel-on-thai-longtail-boat-in-ratchaprapha-dam-at-khao-sok.webp?b=1&s=170667a&w=0&k=20&c=PL6F9_KtlUx4E6pl9ryJxR3kLSv-l6aiHAi1DLw84vk="
+                        alt="Traveler">
+                    <img src="https://static.toiimg.com/thumb/msid-53891769,width-748,height-499,resizemode=4,imgsize-184383/.jpg"
+                        alt="Scenery">
+                </div>
+                <h2>World Tour</h2>
+                <p>We don't just work with concrete. We are approachable.</p>
+                <ul>
+                    <li>Technology Generation <img src="tick-mark.png" alt="tick mark"></li>
+                    <li>Technology Generation <img src="tick-mark.png" alt="tick mark"></li>
+                    <li>Performance Audio <img src="tick-mark.png" alt="tick mark"></li>
+                    <li>Technology Generation <img src="tick-mark.png" alt="tick mark"></li>
+                </ul>
+                <button class="btn">Get Started</button>
+            </div>
+        </div>
+    </div>
+    <div class="pricing">
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <div class="price-section">
+                    <span>month/</span>
+                    <span class="price">$49</span>
+                </div>
+                <div class="images">
+                    <img src="https://media.istockphoto.com/id/1500563478/photo/traveler-asian-woman-relax-and-travel-on-thai-longtail-boat-in-ratchaprapha-dam-at-khao-sok.webp?b=1&s=170667a&w=0&k=20&c=PL6F9_KtlUx4E6pl9ryJxR3kLSv-l6aiHAi1DLw84vk="
+                        alt="Traveler">
+                    <img src="https://static.toiimg.com/thumb/msid-53891769,width-748,height-499,resizemode=4,imgsize-184383/.jpg"
+                        alt="Scenery">
+                </div>
+                <h2>World Tour</h2>
+                <p>We don't just work with concrete. We are approachable.</p>
+                <ul>
+                    <li>Technology Generation <img src="photos/tick-mark.png" alt="tick mark"></li>
+                    <li>Technology Generation <img src="photos/tick-mark.png" alt="tick mark"></li>
+                    <li>Performance Audio <img src="photos/tick-mark.png" alt="tick mark"></li>
+                    <li>Technology Generation <img src="photos/tick-mark.png" alt="tick mark"></li>
+                </ul>
+                <button class="btn">Get Started</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="login-modal" class="login-modal">
+    <div class="login-container">
+        <div class="container2">
+            <div class="left">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Hot_air_balloon_over_a_pagoda_in_Bagan.jpg/1200px-Hot_air_balloon_over_a_pagoda_in_Bagan.jpg" alt="Travel Image">
+            </div>
+            <div class="right">
+                <div class="login-box">
+                    <h2>TRAVEL BLOGGER</h2>
+                    <div class="social-login">
+                        <a href="#"><img src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-facebook-icon-png-images-icons-and-png-backgrounds-1.png" alt="Facebook"></a>
+                        <a href=""><img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-1024.png" alt="Google"></a>
+                    </div>
+                    <form>
+                        <div class="textbox">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="textbox">
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <a href="#" class="forgot-password">Forgot Your Password?</a>
+                        <button type="submit">ENTER</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="close-modal" class="close-modal">✖</button>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

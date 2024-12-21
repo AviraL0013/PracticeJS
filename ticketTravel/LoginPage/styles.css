@@ -1,0 +1,115 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure full height for the body and html */
+    font-family: Arial, sans-serif;
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.login-container {
+    border-radius: 20px; /* Rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh; /* Ensure it takes at least half of the viewport height */
+    
+    width: 1000px;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    border-radius: 20px; /* Ensure container corners are rounded */
+    overflow: hidden; /* Ensure child elements respect rounded corners */
+}
+
+.left {
+    flex: 1;
+    position: relative;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    width: 80%;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e4a6b;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px; /* Rounding the corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #2e4a6b;
+}
+
+.social-login {
+    margin-bottom: 20px;
+}
+
+.social-login a {
+    margin: 0 10px;
+}
+
+.social-login img {
+    width: 30px;
+    height: 30px;
+}
+
+.textbox {
+    margin-bottom: 20px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.forgot-password {
+    display: block;
+    margin-bottom: 20px;
+    color: #2e4a6b;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2e4a6b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1b2a3f; /* Slightly darker color for hover effect */
+}
